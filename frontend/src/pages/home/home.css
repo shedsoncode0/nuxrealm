@@ -1,0 +1,3 @@
+.boldButton {
+   @apply bg-white px-7 p-2 rounded;
+}

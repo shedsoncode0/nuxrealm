@@ -1,6 +1,3 @@
-"use client";
-
-import Link from "next/link";
 import React from "react";
 import { useState } from "react";
 
@@ -12,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full block">
+    <header className="w-full block bg-zinc-700">
       <div className={`bg-black/50 relative font-sequel flex items-center w-full px-4 py-3 backdrop-blur-md`}>
         <svg
           onClick={() => openDropdown()}
@@ -32,9 +29,9 @@ const Header = () => {
         <h1 className="text-white text-lg font-medium ">NUXREALM</h1>
         <div className="flex-1 flex justify-end items-center">
           <div className="flex items-center text-sm font-extralight gap-1 mr-4 text-white">
-            <Link href="#">LOGIN</Link>
+            <a href="#">LOGIN</a>
             <div className="h-4 w-[2px] bg-white" />
-            <Link href="#">SIGN UP</Link>
+            <a href="#">SIGN UP</a>
           </div>
           {/* <a class="fancy" href="#">
           <span class="top-key"></span>

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "SEQUEL";
+  src: url("/fonts/sequel/Sequel_Demo.tff");
+}
+
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
