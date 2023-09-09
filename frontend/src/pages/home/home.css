@@ -1,3 +1,23 @@
 .boldButton {
-   @apply bg-white px-7 p-2 rounded;
+  @apply bg-white px-7 p-2 rounded;
+}
+
+.dd {
+  -webkit-clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(10% 0, 90% 0, 100% 100%, 0% 100%);
+}
+
+.usercard {
+  -webkit-clip-path: polygon(0 1%, 100% 0, 83% 100%, 0% 100%);
+  clip-path: polygon(0 1%, 100% 0, 83% 100%, 0% 100%);
+}
+
+.level_card {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 75%, 76% 100%, 0 100%, 0% 80%, 0% 20%);
+clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 75%, 76% 100%, 0 100%, 0% 80%, 0% 20%);
+}
+
+.level_card_loader {
+  -webkit-clip-path: polygon(7% 0, 100% 0, 94% 98%, 0 98%);
+clip-path: polygon(7% 0, 100% 0, 94% 98%, 0 98%);
 }
