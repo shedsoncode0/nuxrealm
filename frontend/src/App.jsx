@@ -9,7 +9,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <main className="flex min-h-screen w-screen">
+    <main className="h-screen w-screen">
       <Routes>
        
         <Route path="/" element={<Home />} />

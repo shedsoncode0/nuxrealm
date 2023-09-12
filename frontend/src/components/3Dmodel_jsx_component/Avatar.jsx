@@ -8,9 +8,9 @@ import { useFrame, useGraph } from "@react-three/fiber";
 import { SkeletonUtils } from "three-stdlib";
 
 const MOVEMENT_SPEED = 0.052;
-
+// https://models.readyplayer.me/64fb1bd6a9fb106b21a9ef29.glb
 export default function Avatar({
-  avatarUrl = "https://models.readyplayer.me/64fb1bd6a9fb106b21a9ef29.glb",
+  avatarUrl = "3Dmodels/woman.glb",
   ...props
 }) {
   const avatar = useRef();
@@ -27,7 +27,7 @@ export default function Avatar({
   );
 
   const { actions } = useAnimations(danceAnimation, avatar);
-  console.log(actions);
+  // console.log(actions);
 
   useEffect(() => {
     actions[animation].reset().fadeIn(0.32).play();

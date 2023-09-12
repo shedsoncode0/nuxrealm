@@ -33,7 +33,7 @@ export const Experience = () => {
           position={[0, -0.3, 0]}
           rotation={[0, Math.PI / 2, 0]}
         />
-      <Avatar scale={0.4} position={[0, -0.4, 0]} />
+        {/* <Avatar scale={0.4} position={[0, -0.4, 0]} /> */}
       </Float>
     </>
   );

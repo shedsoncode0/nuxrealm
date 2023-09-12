@@ -1,6 +1,10 @@
 import React from "react";
 import "./home.css";
-import { ActivityCard, GameTypeCard } from "../../components/cards";
+import {
+  ActivityCard,
+  GameTypeCard,
+  UserDetailCard,
+} from "../../components/cards";
 import { PrimaryButton } from "../../components/button";
 import { CoinTab, StoneTab } from "../../components/small_components";
 import { Canvas } from "@react-three/fiber";
@@ -14,36 +18,23 @@ const Home = () => {
   return (
     <>
       <MainLoading progress={progress} />
-      <div className=" flex flex-col h-screen w-full bg-yellow-400 relative font-sequel bg-cover bg-center bg-no-repeat bg-[url('./assets/image2.png')]">
-        <section className="w-full z-20 p-3 flex justify-between">
-          <div className="usercard max-w-[250px]  w-full flex h-[70px] bg-black/50 backdrop-blur-sm p-1 pr-8">
-            <div className="h-full w-12 bg-red-500 level_card flex flex-col justify-center items-center">
-              <h1 className="text-white font-proxon font-normal text-xl">2</h1>
-              <h1 className="text-white text-[10px] font-extralight">LEVEL</h1>
-            </div>
-            <div className="flex-1 text-white ml-[5px] flex flex-col gap-0 space-0 justify-between">
-              <div className="h-[42px] w-[46px] bg-slate-500"></div>
-
-              <div className="w-full h-[15px] level_card_loader relative -left-[10px] bg-white text-black pl-3 flex items-center">
-                <h1 className="text-[10px] font-extralight">XP:</h1>
-                <div className="level_card_loader"></div>
-              </div>
-            </div>
-          </div>
+      <div className=" flex flex-col flex-1 h-full bg-yellow-400 relative font-sequel  p-1">
+        <section className="w-full z-20 flex justify-between">
+          <UserDetailCard />
           <div className="w-full h-8  flex justify-end">
             <StoneTab />
             <CoinTab />
           </div>
         </section>
 
-        <section className="absolute h-full w-full z-10">
+        {/* <section className="absolute w-full h-full z-10">
           <Canvas shadows>
             <color attach="background" args={["#f0f0f0"]} />
             <Experience />
           </Canvas>
 
           <SocketManager />
-        </section>
+        </section> */}
 
         {/*Start of middle section */}
         <section className=" flex-1 w-full z-20 p-3 mt-5 flex justify-between items-center">
